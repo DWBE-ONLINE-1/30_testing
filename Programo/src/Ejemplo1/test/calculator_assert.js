@@ -1,5 +1,5 @@
 const assert = require("assert");
-const calculator = require("../app/calculator");
+const calculator = require("../src/calculator");
 
 describe("Calcultator tests using ASSERT module", function () {
     before(function () {
@@ -20,7 +20,7 @@ describe("Calcultator tests using ASSERT module", function () {
       // result = null;
       console.info("##### Hook afterEach...");
     });
-  describe.only("Check Sum Function: ", function () {
+  describe("Check Sum Function: ", function () {
     it("Check the returned value using: assert.strictEqual(value, value): ", function () {
       let result = calculator.sum(2);
       assert.strictEqual(result, 4);
@@ -30,7 +30,7 @@ describe("Calcultator tests using ASSERT module", function () {
       assert(typeof result, "number");
     });
   });
-  describe.only("Check addTested Function: ", function () {
+  describe("Check addTested Function: ", function () {
     it("Check the returned value using: assert.strictEqual(value, value): ", function () {
       let result = calculator.addTested("text");
       assert.strictEqual(result, "text tested");

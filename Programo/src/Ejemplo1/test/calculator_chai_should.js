@@ -1,5 +1,5 @@
 const should = require("chai").should();
-const calculator = require("../app/calculator");
+const calculator = require("../src/calculator");
 
 describe("Calcultator tests using SHOULD interface from CHAI module: ", function () {
   //   before(function () {

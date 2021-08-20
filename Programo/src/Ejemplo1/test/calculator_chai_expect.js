@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const calculator = require("../app/calculator");
+const calculator = require("../src/calculator");
 
 describe("Calcultator tests using EXPECT interface from CHAI module: ", function () {
 //   before(function () {
